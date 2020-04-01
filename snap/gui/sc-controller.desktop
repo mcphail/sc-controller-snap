@@ -5,6 +5,6 @@ Comment=Edits controller mappings
 Comment[ru]=Настройка контроллера
 Exec=sc-controller
 Type=Application
-Icon=sc-controller
+Icon=${SNAP}/meta/gui/sc-controller.svg
 Categories=GTK;Settings;HardwareSettings;
 MimeType=application/x-steamcontrollerdb-profile;application/x-scc-profile;application/x-scc-profile-package
