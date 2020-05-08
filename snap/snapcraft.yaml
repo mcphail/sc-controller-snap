@@ -34,6 +34,18 @@ parts:
       - libusb-1.0-0
       - linux-libc-dev
 
+  cleanup:
+    after: [main]
+    plugin: nil
+    build-snaps:
+      - core18
+      - gtk-common-themes
+      - gnome-3-28-1804
+    override-prime: |
+      set -eux
+      for snap in "core18" "gtk-common-themes" "gnome-3-28-1804"; do
+        cd "/snap/$snap/current" && find . -type f,l -exec rm -r "$SNAPCRAFT_PRIME/{}" \;
+      done
 apps:
   sc-controller:
     extensions: [gnome-3-28]
