@@ -50,7 +50,7 @@ apps:
   sc-controller:
     extensions: [gnome-3-28]
     command: $SNAP/usr/bin/sc-controller
-    plugs: [raw-usb]
+    plugs: [raw-usb, uinput]
 
 layout:
   /usr/bin/python:
