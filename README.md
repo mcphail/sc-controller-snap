@@ -2,10 +2,10 @@
 Snapped version of sc-controller
 
 Steps required for alpha functionality:
-- [ ] Release of snapd 2.46 with integration of the `uinput` interface
+- [x] Release of snapd 2.46 with integration of the `uinput` interface
 - [ ] Autoconnection of `uinput` interface
   - [ ] Sponsorship or adoption by trusted snapcrafter or upstream
-  - [ ] Raise request on snapcraft forum
+  - [x] Raise request on snapcraft forum
   
 Steps required for beta functionality:
 - [ ] Exploration of bluetooth integration
