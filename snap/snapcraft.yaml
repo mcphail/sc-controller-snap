@@ -5,9 +5,9 @@ summary: Driver, mapper and GUI for Steam Controller, DS4 and similar controller
 description: |
   Allows setup, configuration and use of Steam Controller(s) without ever launching Steam. Supports switchable profiles, sticks, pads, gyroscope input, haptic feedback and in-game rumble support. OSD, menus and on-screen keyboard for desktop and in games. Automatic profile switching based on active window. Emulates Xbox360 controller, mouse, trackball and keyboard and much more.
 
-  Note - this snap will not be functional until support for accessing /dev/uinput comes to snapd. Brave pioneers can follow the instructions at https://forum.snapcraft.io/t/best-way-to-access-dev-uinput/16242/7 in the meantime.
-
-  Note 2 - It is essential to install the Steam Controller udev rules on your system to access your device. Ubuntu users should run "sudo apt install steam-devices".
+  Important note! - It is essential to install the Steam Controller udev rules on your system to access your device. Ubuntu users should run "sudo apt install steam-devices".
+  
+  No attempt has yet been made to implement bluetooth functionality into this snap. Neither has it been tested on non-Steam controllers. Please file issues at https://github.com/mcphail/sc-controller-snap if you would be interested in helping to test these features.
 
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict
